@@ -12,8 +12,9 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    let result = (prompt('Your choice: \nRock \nPaper \nScissor', '')).toLowerCase();
-    return result;
+    let result = (prompt('Your choice: \nRock \nPaper \nScissor', 'rock'));
+
+    return !result ? 'rock' : result.toLowerCase();
 }
 
 function playRound(humanChoice, computerChoice) {
