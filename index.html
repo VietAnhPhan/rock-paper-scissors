@@ -5,9 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1 {
+            text-transform: uppercase;
+        }
+
+        .selection {
+            display: flex;
+        }
+
+        .selection div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .selection img {
+            max-width: 300px;
+            max-height: 300px;
+
+        }
+
+        .selection button {
+            width: 100%;
+            /* height: 30px; */
+            font-size: 20px;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 
 <body>
+    <h1>Rock Paper Scissors game</h1>
+    <p>Rule of the game:</p>
+    <ul>
+        <li>Rock > scissor</li>
+        <li>Rock < paper</li>
+        <li>Scissor > paper</li>
+    </ul>
+    <div class="result">
+        <ul>
+
+        </ul>
+       
+    </div>
+    <div class="selection">
+        <div>
+            <img src="./images/rock.png" alt="">
+            <button id="rock">
+                Rock
+            </button>
+        </div>
+        <div>
+            <img src="./images/scissor.png" alt="">
+            <button id="scissor">
+                Scissor
+            </button>
+        </div>
+        <div>
+            <img src="./images/paper.png" alt="">
+            <button id="paper">
+                Paper
+            </button>
+        </div>
+    </div>
+
     <script src="./script.js"></script>
 </body>
 
